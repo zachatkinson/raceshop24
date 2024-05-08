@@ -1,17 +1,18 @@
-{% for custom_colors in shop.metaobjects %}
-<div class="image-container">
-  <div>
-    <img src="{{ custom_colors.variants.photo | img_url }}" alt="custom_colors.variants.title">
+<!-- Working Variant Code -->
+<div class="page-width">
+{% for custom_colors in shop.metaobjects.custom_colors.values %} 
+{% if custom_colors!= blank %}
+  <h2>{{ custom_colors.header }}</h2>
+{% endif %}
+  <div class="grid">
+  {% for custom_colors in shop.metaobjects.custom_colors.csf-s-58-level-up-manifold-custom-finishes-csf-8233-c.variant.value %} 
+  {% if custom_colors!= blank %}
+    <div class="grid__item">
+      <img src="{{ custom_colors | image_url }}" width="200" height=auto /> 
+      <h3 class="inline-richtext">{{ custom_colors.title }}</h3>
+    </div>
+  {% endif %}
+  {% endfor %}
   </div>
-</div>
 {% endfor %}
-
-{% schema %}
-  {
-    "name": "Custom-Colors",
-    "settings": [],
-    "presets": [{
-      "name": "Custom-Colors"
-    }]
-  }
-{% endschema %}
+</div>
