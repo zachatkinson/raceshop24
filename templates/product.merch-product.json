@@ -51,7 +51,7 @@
         "custom_liquid_hpi4je": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<!-- Custom Button \"Cool Guys Only\" -->\n<a href=\"#\" class=\"btn-custom-cool-guys\">Cool Guys Only<\/a>\n\n<!-- Optional CSS to Style the Button -->\n<style>\n  .btn-custom-cool-guys {\n    display: inline-block;\n    padding: 10px 20px;\n    background-color: #4CAF50; \/* Green color *\/\n    color: white;\n    text-align: center;\n    text-decoration: none;\n    font-size: 16px;\n    border-radius: 5px;\n    transition: background-color 0.3s ease;\n  }\n\n  .btn-custom-cool-guys:hover {\n    background-color: #45a049; \/* Darker green on hover *\/\n  }\n<\/style>"
+            "custom_liquid": ""
           }
         },
         "description": {
@@ -64,6 +64,12 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "custom_liquid_6j8LK7": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% if custom.featured_partner_links %}\n  <h2>Hi Dude<\/h2>\n{% endif %}"
+          }
         }
       },
       "block_order": [
@@ -75,7 +81,8 @@
         "buy_buttons",
         "custom_liquid_hpi4je",
         "description",
-        "share"
+        "share",
+        "custom_liquid_6j8LK7"
       ],
       "settings": {
         "enable_sticky_info": true,
