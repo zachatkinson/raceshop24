@@ -68,7 +68,7 @@
         "custom_liquid_6j8LK7": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{% if custom.featured_partner_links %}\n  <h2>Hi Dude<\/h2>\n{% endif %}"
+            "custom_liquid": "<h2>Test<\/h2>\n{{custom.featured_dealer_links[url]}}\n<h2>End Test<\/h2>\n{{custom.featured_dealer_links.title}}\n{% if custom.featured_dealer_links%}\n  <h2>{custom.featured_dealer_links.url}<\/h2>\n{% endif %}"
           }
         }
       },
