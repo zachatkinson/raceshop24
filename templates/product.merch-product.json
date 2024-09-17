@@ -48,6 +48,12 @@
             "show_gift_card_recipient": false
           }
         },
+        "custom_liquid_6j8LK7": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% if product.metafields.custom.featured_dealer_links %}\n \n  {% assign featured_links = product.metafields.custom.featured_dealer_links %}\n  \n    {% for item in featured_links.value %}\n      <a href=\"{{ item.url}}\" class=\"button button--full-width\">{{ item.text }}<\/a>\n    {% endfor %}\n{% endif %}"
+          }
+        },
         "description": {
           "type": "description",
           "settings": {
@@ -58,12 +64,6 @@
           "settings": {
             "share_label": "Share"
           }
-        },
-        "custom_liquid_6j8LK7": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{% if product.metafields.custom.featured_dealer_links %}\n \n  {% assign featured_links = product.metafields.custom.featured_dealer_links %}\n  \n  {% if featured_links %}\n    <p>Metafield exists!<\/p>\n{{featured_links | link}}\n  {% endif %}\n  \n  {% if featured_links contains \"url\" %}\n    <!-- If it's a single object, output directly -->\n<pre>Contains URL!<\/pre>\n    <a href=\"{{ featured_links.url.value }}\" class=\"button button--full-width\">{{ featured_links.text.value }}<\/a>\n  {% else %}\n    <!-- Assuming it's an array -->\n<pre>Entering else...<\/pre>\n    {% for item in featured_links.value %}\n      <a href=\"{{ item.url}}\" class=\"button button--full-width\">{{ item.text }}<\/a>\n    {% endfor %}\n  {% endif %}\n{% endif %}"
-          }
         }
       },
       "block_order": [
@@ -73,9 +73,9 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "custom_liquid_6j8LK7",
         "description",
-        "share",
-        "custom_liquid_6j8LK7"
+        "share"
       ],
       "settings": {
         "enable_sticky_info": true,
