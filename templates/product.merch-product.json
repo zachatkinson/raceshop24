@@ -48,12 +48,6 @@
             "show_gift_card_recipient": false
           }
         },
-        "custom_liquid_hpi4je": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": ""
-          }
-        },
         "description": {
           "type": "description",
           "settings": {
@@ -79,7 +73,6 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "custom_liquid_hpi4je",
         "description",
         "share",
         "custom_liquid_6j8LK7"
