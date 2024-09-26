@@ -100,7 +100,7 @@
     "custom_liquid_eHz898": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<h2>Testing</h2>",
+        "custom_liquid": "{% if product.metafields.custom.featured_dealer_links %}\n  {% assign yt_videos = product.metafields.custom.featured_dealer_links %}\n<div style=\"background-color: pink; display: flex; flex-direction: row; flex-wrap: wrap;\">\n<div style=\"background-color: blue;\">\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/OTS87MPAsjA?si=X_THHYxvzyklRSod\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n</div>\n</div>\n{% endif %}",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
