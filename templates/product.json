@@ -39,7 +39,7 @@
         "custom_liquid_wLEtUB": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{% if product.metafields.custom.featured_dealer_links %}\n \n  {% assign featured_links = product.metafields.custom.featured_dealer_links %}\n  \n    {% for item in featured_links.value %}\n      <a href=\"{{ item.url}}\" class=\"button button--full-width\">{{ item.text }}<\/a>\n    {% endfor %}\n{% endif %}"
+            "custom_liquid": "{% if product.metafields.custom.featured_dealer_links %}\n \n  {% assign featured_links = product.metafields.custom.featured_dealer_links %}\n  \n    {% for item in featured_links.value %}\n      <a href=\"{{ item.url}}\" class=\"button button--full-width\">{{ item.text }}</a>\n    {% endfor %}\n{% endif %}"
           }
         },
         "description": {
@@ -83,7 +83,7 @@
       "type": "apps",
       "blocks": {
         "tinytabs_tabs_block_3CxmNd": {
-          "type": "shopify:\/\/apps\/tinytabs\/blocks\/tabs-block\/cd5da974-394e-41cb-b448-0c9a6d16a42d",
+          "type": "shopify://apps/tinytabs/blocks/tabs-block/cd5da974-394e-41cb-b448-0c9a6d16a42d",
           "settings": {
             "css_selector": "",
             "custom_css": ""
@@ -114,11 +114,26 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "video_LPt6cg": {
+      "type": "video",
+      "settings": {
+        "heading": "Video",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://www.youtube.com/watch?v=sSd7DDYXkhg",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "17152239357deb5567",
-    "related-products"
+    "related-products",
+    "video_LPt6cg"
   ]
 }
