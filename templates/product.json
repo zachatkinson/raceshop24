@@ -79,6 +79,15 @@
         "padding_bottom": 12
       }
     },
+    "custom_liquid_eHz898": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<h2>Testing</h2>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "17152239357deb5567": {
       "type": "apps",
       "blocks": {
@@ -118,6 +127,7 @@
   },
   "order": [
     "main",
+    "custom_liquid_eHz898",
     "17152239357deb5567",
     "related-products"
   ]
