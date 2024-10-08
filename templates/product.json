@@ -39,7 +39,7 @@
         "custom_liquid_wLEtUB": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{% if product.metafields.custom.featured_dealer_links %}\n \n  {% assign featured_links = product.metafields.custom.featured_dealer_links %}\n  \n    {% for item in featured_links.value %}\n      <a href=\"{{ item.url}}\" class=\"button button--full-width\">{{ item.text }}</a>\n    {% endfor %}\n{% endif %}"
+            "custom_liquid": "{% if product.metafields.custom.featured_dealer_links %}\n \n  {% assign featured_links = product.metafields.custom.featured_dealer_links %}\n  \n    {% for item in featured_links.value %}\n      <a href=\"{{ item.url}}\" class=\"button button--full-width\" target=\"_blank\">{{ item.text }}</a>\n    {% endfor %}\n{% endif %}"
           }
         },
         "description": {
